@@ -7,7 +7,11 @@ module Todos
     end
 
     def execute
-      "1"
+      todo = Todo.create!(title: title, deadline: deadline)
+
+      # Add Callbacks here
+
+      todo
     end
   end
 end
